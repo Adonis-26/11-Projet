@@ -69,12 +69,11 @@
   padding: 2em;
   background: #2F5D50;
   color: #FAF6EF;
-  font-family: 'Familjen Grotesk', Helvetica, sans-serif;
+  font-family: 'verdana', sans-serif;
   box-sizing: border-box;
   position: relative;
 }
 
-/* Burger caché par défaut (desktop) */
 .burger {
   display: none;
   flex-direction: column;
