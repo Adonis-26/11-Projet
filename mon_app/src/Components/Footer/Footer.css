@@ -1,11 +1,11 @@
 .party-footer{
     width: 100%;
-    height: 169px;
+    height: 132px;
     background: #2F5D50;
     color: #FAF6EF;
-    font-family: 'verdana', Helvetica, sans-serif;
+    font-family: 'verdana', sans-serif;
     text-align: center;
-    padding: 52px;
+    padding: 30px;
 }
 
 .repos-line{

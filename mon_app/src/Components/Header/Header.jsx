@@ -10,7 +10,7 @@ const NAV = [
   {label:'Contact', href:'#contact'},
 ];
 
-export default function Header({ brand = 'Adonis YAMB NDEBY', items = NAV }) {
+export default function Header({ brand = 'Intégrateur Web', items = NAV }) {
   const [open, setOpen] = useState(false);
 
   return (

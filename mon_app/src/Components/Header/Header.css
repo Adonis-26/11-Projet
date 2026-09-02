@@ -6,22 +6,23 @@
   padding: 2em;
   background: #2F5D50;
   color: #FAF6EF;
-  font-family: 'Familjen Grotesk', Helvetica, sans-serif;
+  font-family:'verdana', sans-serif;;
 }
 
 .party-header_brand {
   display: flex;
   gap: 32px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
+  font-family: 'verdana', sans-serif;
+  font-size: 25px;
+  
   letter-spacing: 0.04em;
 }
 
 .party-header_nav {
   display: flex;
   gap: 32px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
+  font-family: 'verdana', sans-serif;
+  font-size: 15px;
   letter-spacing: 0.04em;
 }
 
@@ -66,7 +67,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 2em;
+  padding: 3em;
   background: #2F5D50;
   color: #FAF6EF;
   font-family: 'verdana', sans-serif;
