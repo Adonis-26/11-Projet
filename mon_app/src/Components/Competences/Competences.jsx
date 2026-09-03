@@ -21,11 +21,11 @@ const competences = [
 const skills = [
   'HTML',
   'CSS',
-  'SASS',
+  'SCSS',
   'JavaScript',
   'React & Redux',
   'Les appels API',
-  'Visual Studio Code',
+  'VSCode',
   'Le responsive design',
   'Git & GitHub',
 ];
