@@ -1,5 +1,9 @@
 .party-Acceuil{
-    width: 55%;
+    width: 70%;
     padding: 5%;
-    color:#1a4832;
+    color:#4A443B;
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0 0 20px;
+    text-wrap: pretty;
 }

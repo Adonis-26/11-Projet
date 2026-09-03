@@ -13,7 +13,7 @@ export default function Formation() {
   return (
     
       <div className="formation-timeline">
-        {FORMATIONS.map(({ year, title, org, desc }) => (
+        {FORMATIONS.map(({ year, title, org }) => (
           <div key={year} className="formation-item">
             <div className="formation-item-line"></div>
             <div className="formation-year">{year}</div>
@@ -21,7 +21,6 @@ export default function Formation() {
               <span className="formation-dot"></span>
               <h3 className="formation-heading">{title}</h3>
               <p className="formation-org">{org}</p>
-              <p className="formation-desc">{desc}</p>
             </div>
           </div>
         ))}

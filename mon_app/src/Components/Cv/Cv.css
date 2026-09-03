@@ -1,0 +1,53 @@
+.cv_body{
+    padding: 5%;
+    width: 70%;
+}
+.cv_lead {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 0 24px;
+  text-wrap: pretty;
+}
+
+.cv_text {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #4A443B;
+  margin: 0 0 20px;
+  text-wrap: pretty;
+}
+
+.cv_text--last {
+  margin-bottom: 36px;
+}
+
+.cv_download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FAF6EF;
+  background: #2F5D50;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 14px 28px;
+ 
+}
+
+
+.cv_download:hover {
+  background: #244840;
+  color: #FAF6EF;
+}
+
+.cv_download:active {
+  background: #1C3830;
+}
+
+.cv_download:focus-visible {
+  outline: 2px solid #2F5D50;
+  outline-offset: 3px;
+}
