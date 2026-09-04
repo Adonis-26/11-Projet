@@ -1,0 +1,147 @@
+.projets_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 5%;
+}
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px -30px rgba(26, 24, 21, 0.32);
+  border: #CFC3AE;
+}
+
+.projet_media {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  aspect-ratio: 16 / 10;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.projet_media:hover,
+.projet_media:focus-visible {
+  background: #d8d8d8;
+}
+
+.projet_placeholder {
+  color: #888;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.projet_body{
+  padding: 1rem;
+}
+
+.projet_name {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: #2F5D50;
+}
+
+.projet_desc {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.projet_meta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal {
+  position: relative;
+  background-color: wheat;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 530px;
+  width: 92%;
+  max-height: 90vh;
+  overflow-y: auto;
+  outline: none; 
+}
+
+.modal_close {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  background: #2F5D50;
+  font-size: 108%;
+  line-height: 27px;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  height: 27px;
+  width: 27px;
+  border-radius: 27px;
+}
+
+.modal_close:hover,
+.modal_close:focus-visible {
+  color: #000;
+}
+
+.modal_media {
+  aspect-ratio: 16 / 10;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  border-radius: 4px;
+}
+
+.modal_title {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  color: #2F5D50;
+}
+
+.modal_description {
+  margin: 0 0 0.5rem;
+  color: #444;
+  font-size: 17px ;
+}
+
+.modal_meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.modal-overlay {
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.modal-overlay--after-open {
+  opacity: 1;
+}
+
+.modal-overlay--before-close {
+  opacity: 0;
+}

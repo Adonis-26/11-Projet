@@ -8,10 +8,42 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: 'monterrat', sans-serif;
-  
   background-color: #FAF6EF;
 }
 
 #root {
   width: 100%;
+}
+
+.bloc_title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2{
+  color: #2F5D50;
+  font-size: 35px;
+  margin: -4px;
+}
+
+.subtitle{
+  color: black;
+  font-size: 15px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.section-separator {
+  border: none;
+  height: 2px;
+  background-color: #4A443B; 
+  width: 80%;
+  margin: 2px 92px;
+}
+
+div{
+  margin: 0;
 }

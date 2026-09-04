@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import react, { useState } from 'react';
 import './Contact.css'
 
 const initialFormData = {
@@ -19,7 +19,6 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: brancher l'appel API / envoi du formulaire
     console.log(formData);
 
     setIsModalOpen(true);
@@ -29,7 +28,12 @@ function Contact() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
+    
     <>
+    <div className='bloc_title'>
+          <h2>Contact</h2>
+          <p className="subtitle">Je vous répond sous 48</p>
+        </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-form_col">
           <div className="field">

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Header.css';
 
 const NAV = [
-  {label:'Accueil', href:'#accueil'},
+  {label:'Présentation', href:'#accueil'},
   {label:'Projets', href:'#travaux'},
   {label:'Compétences', href:'#methode'},
   {label:'Cv', href:'#apropos'},
