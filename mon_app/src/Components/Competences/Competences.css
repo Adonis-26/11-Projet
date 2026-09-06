@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 0 5%;
+  padding: 5% 15% 0% 15%;
 }
 
 .competence_step {
@@ -28,7 +28,7 @@
 } 
 
 .skills {
-  padding: 5%;
+  padding: 0% 15% 5% 15%;
 }
 
 .skills_label {

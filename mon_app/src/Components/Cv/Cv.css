@@ -1,6 +1,7 @@
 .cv_body{
-    padding: 5%;
+    max-width: 100%;
     width: 70%;
+    padding: 5% 5% 0 15%;
 }
 .cv_lead {
   font-size: 24px;

@@ -11,7 +11,11 @@ const FORMATIONS = [
 
 export default function Formation() {
   return (
-    
+    <div className="container">
+      <div className="bloc_title">
+        <h2>Formation</h2>
+        <p className="subtitle">Parcours et certifications, du découpage de PSD au <br />front moderne.</p>
+      </div>
       <div className="formation-timeline">
         {FORMATIONS.map(({ year, title, org }) => (
           <div key={year} className="formation-item">
@@ -35,5 +39,6 @@ export default function Formation() {
           </div>
         </div>
       </div>
+    </div>
   );
 }

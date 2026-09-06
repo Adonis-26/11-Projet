@@ -30,10 +30,11 @@ function Contact() {
   return (
     
     <>
-    <div className='bloc_title'>
-          <h2>Contact</h2>
-          <p className="subtitle">Je vous répond sous 48</p>
-        </div>
+    <div className="container">
+      <div className="bloc_title">
+        <h2>Contact</h2>
+        <p className="subtitle">Je vous répond sous 48h</p>
+      </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-form_col">
           <div className="field">
@@ -117,6 +118,7 @@ function Contact() {
           </div>
         </div>
       )}
+      </div>
     </>
   );
 }

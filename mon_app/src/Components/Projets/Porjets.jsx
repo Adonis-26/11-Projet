@@ -75,7 +75,6 @@ const customStyles = {
 
 function Projet({ projet, onOpen }) {
   return (
-    
     <article className="projet">
       <button
         className="projet_media"

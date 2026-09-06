@@ -32,6 +32,7 @@
   display: grid;
   gap: 0;
   position: relative;
+  padding: 5% 0% 0% 0%;
 }
 
 .formation-item {

@@ -1,12 +1,16 @@
-.party-header {
+ .party-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin: 0 auto;
-  padding: 2em;
+  align-items: center;
+  width: 100%;
+  padding: 3em;
   background: #2F5D50;
   color: #FAF6EF;
-  font-family:'verdana', sans-serif;;
+  font-family: 'verdana', sans-serif;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .party-header_brand {

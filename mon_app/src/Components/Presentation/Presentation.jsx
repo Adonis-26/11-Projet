@@ -1,21 +1,29 @@
 import './Presentation.css'
 
-function A_propos() {
+function presentation() {
   return (
-    <div className='Presentation'>
-        <div className='bloc_title'>
-          <h2> Présentation</h2>
-          <p className="subtitle">Une sélection de réalisations récentes</p>
+    <div className="container">
+      <div className="bloc_title">
+        <h2>Présentation</h2>
+        <div className='bloc_presentation'>
+           <p >
+          Après 10 ans d’expérience en tant que technicien informatique, j’ai choisi d’enrichir 
+          mon parcours en me spécialisant dans le développement.
+          Actuellement en formation d’<strong>Intégrateur Web</strong> chez <strong>OpenClassrooms</strong>, je prépare la certification professionnelle RNCP de niveau 5.
+          Cette reconversion est pour moi l’occasion de mettre à profit mon expérience technique, ma rigueur et mon intérêt pour les nouvelles technologies afin de concevoir des interfaces web modernes,
+          esthétiques, fonctionnelles et accessibles, tout en plaçant l’expérience utilisateur au cœur de mes réalisations.
+          Mon objectif est de transformer des idées et des maquettes en expériences web fluides, responsives et adaptées à tous les écrans.
+           </p>
+        
+          <img className="presentation_image" src='/wp2902209-1318794391.png' alt="Photo de profil" />
+        
         </div>
-        <p>
-            Je m'appele <strong>Adonis YAMB NDEBY</strong>, je transforme des designs en expériences web modernes, fluides et responsives.
-            En tant qu’Intégrateur Web, je donne vie aux maquettes et aux idées en créant des interfaces web harmonieuses, accessibles et adaptées à tous les écrans.
-            Mon rôle consiste à transformer un design graphique en une véritable expérience utilisateur, tout en veillant à la qualité du code, aux performances et à la compatibilité avec les différents navigateurs et appareils.<br></br>
-        </p>
+       
+
+      </div>
         
     </div>
-    
   )
 }
 
-export default A_propos
+export default presentation

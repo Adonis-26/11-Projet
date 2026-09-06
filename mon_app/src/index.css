@@ -15,17 +15,22 @@ body {
   width: 100%;
 }
 
+.container{
+  padding: 5% 0%;
+}
+
 .bloc_title {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  font-family: 'Familjen Grotesk', sans-serif;
 }
 
 h2{
   color: #2F5D50;
   font-size: 35px;
-  margin: -4px;
+  margin-bottom: 4px;
 }
 
 .subtitle{
@@ -44,6 +49,3 @@ h2{
   margin: 2px 92px;
 }
 
-div{
-  margin: 0;
-}

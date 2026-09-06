@@ -32,14 +32,20 @@ const skills = [
 
 function Competences() {
   return (
-    <div className="competences_grid">
-      {competences.map((item, index) => (
-        <div className="competence" key={index}>
-          <div className="competence_step">{item.step}</div>
-          <h3 className="competence_title">{item.title}</h3>
-          <p className="competence_desc">{item.desc}</p>
+    <div className="container">
+        <div className="bloc_title">
+          <h2>Compétences</h2>
+          <p className="subtitle">Trois étapes, de la lecture de la maquette à la <br />recette sur appareils réels.</p>
         </div>
-      ))}
+      <div className="competences_grid">
+        {competences.map((item, index) => (
+          <div className="competence" key={index}>
+            <div className="competence_step">{item.step}</div>
+            <h3 className="competence_title">{item.title}</h3>
+            <p className="competence_desc">{item.desc}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
