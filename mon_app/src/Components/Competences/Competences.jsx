@@ -1,59 +1,30 @@
 import './Competences.css'
 
-const competences = [
-  {
-   step:'01 — Lecture',
-   title:'On regarde la maquette ensemble',
-   desc:"Je note les points de rupture manquants, les états d'erreur oubliés, les cas de texte long. Avant d'écrire une ligne.",
-  },
-  {
-   step:'02 — Intégration',
-   title:'Du mobile vers le grand écran',
-   desc:'Une seule feuille de style, des unités fluides, aucun point de rupture inventé pour cacher un problème de contenu.',
-  },
-  {
-   step:'03 — Recette',
-   title:'Testé sur de vrais appareils',
-   desc:"Safari iOS, Chrome Android, un lecteur d'écran, et le clavier seul. Rapport de recette livré avec le code.",
-  },
-];
-
 const skills = [
   'HTML',
+  'SEO',
   'CSS',
   'SCSS',
+  'Figma',
+  'VSCode',
+  'node.js',
+  'swagger',
+  'MongoDB',
   'JavaScript',
+  'Git & GitHub',
   'React & Redux',
   'Les appels API',
-  'VSCode',
   'Le responsive design',
-  'Git & GitHub',
 ];
 
 function Competences() {
   return (
     <div className="container">
         <div className="bloc_title">
-          <h2>Compétences</h2>
+          <h2 id='competences'>Compétences</h2>
           <p className="subtitle">Trois étapes, de la lecture de la maquette à la <br />recette sur appareils réels.</p>
         </div>
-      <div className="competences_grid">
-        {competences.map((item, index) => (
-          <div className="competence" key={index}>
-            <div className="competence_step">{item.step}</div>
-            <h3 className="competence_title">{item.title}</h3>
-            <p className="competence_desc">{item.desc}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function Skills() {
-  return (
-    <div className="skills">
-      <div className="skills_label">Skills</div>
+      <div className="skills">
       <ul className="skills_list">
         {skills.map((skill, index) => (
           <li className="skill" key={index}>
@@ -62,14 +33,8 @@ function Skills() {
         ))}
       </ul>
     </div>
+    </div>
   );
 }
 
-export default function App() {
-  return (
-    <>
-      <Competences />
-      <Skills />
-    </>
-  );
-}
+export default Competences

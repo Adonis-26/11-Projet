@@ -3,9 +3,10 @@ import './Presentation.css'
 function presentation() {
   return (
     <div className="container">
-      <div className="bloc_title">
-        <h2>Présentation</h2>
+      <div className="bloc_title"> 
+        <h2 id="presentation" >Présentation</h2>
         <div className='bloc_presentation'>
+           <img className="presentation_image" src='/wp2902209-1318794391.png' alt="Photo de profil" />
            <p >
           Après 10 ans d’expérience en tant que technicien informatique, j’ai choisi d’enrichir 
           mon parcours en me spécialisant dans le développement.
@@ -15,7 +16,7 @@ function presentation() {
           Mon objectif est de transformer des idées et des maquettes en expériences web fluides, responsives et adaptées à tous les écrans.
            </p>
         
-          <img className="presentation_image" src='/wp2902209-1318794391.png' alt="Photo de profil" />
+          
         
         </div>
        

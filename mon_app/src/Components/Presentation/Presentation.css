@@ -9,7 +9,7 @@
 
 .bloc_presentation{
     max-width: 100%;
-    padding: 3% 15% 0%;
+    padding: 1% 15% 0%;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -22,9 +22,11 @@
 }
 
 .presentation_image{
-    width: 40%;
-    height: 60%;
-    
+  width: 40%;
+  height: 60%;
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px -30px rgba(26, 24, 21, 0.32);
+  border: #CFC3AE;   
 }
 
 @media (max-width: 768px) {

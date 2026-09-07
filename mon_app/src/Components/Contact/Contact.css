@@ -5,7 +5,7 @@
   gap: 24px 32px;
   max-width: 100%;
   align-items: start;
-  padding: 5% 15% 0% 15%;
+  padding: 2% 15% 0% 15%;
 }
 
 .contact-form_col {
@@ -23,7 +23,7 @@
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #6B6357;
+  color: black;
 }
 
 .field_input {

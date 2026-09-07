@@ -1,7 +1,7 @@
 .cv_body{
     max-width: 100%;
-    width: 70%;
-    padding: 5% 5% 0 15%;
+    width: 100%;
+    padding: 2% 15% 0 15%;
 }
 .cv_lead {
   font-size: 24px;
@@ -13,7 +13,7 @@
 .cv_text {
   font-size: 17px;
   line-height: 1.65;
-  color: #4A443B;
+  color: wi;
   margin: 0 0 20px;
   text-wrap: pretty;
 }
@@ -37,7 +37,6 @@
   padding: 14px 28px;
  
 }
-
 
 .cv_download:hover {
   background: #244840;

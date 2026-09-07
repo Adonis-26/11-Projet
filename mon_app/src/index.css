@@ -7,8 +7,8 @@
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: 'monterrat', sans-serif;
-  background-color: #FAF6EF;
+  font-family: 'verdana', sans-serif;
+  background-color: #F5F0E8;
 }
 
 #root {
@@ -16,7 +16,7 @@ body {
 }
 
 .container{
-  padding: 5% 0%;
+  padding: 1% 0%;
 }
 
 .bloc_title {
@@ -24,28 +24,27 @@ body {
   flex-direction: column;
   text-align: center;
   margin-bottom: 15px;
-  font-family: 'Familjen Grotesk', sans-serif;
+  overflow: auto;
 }
 
 h2{
+  font-family: 'verdana';
   color: #2F5D50;
   font-size: 35px;
-  margin-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75px;
+  font-weight: 600;
 }
 
 .subtitle{
   color: black;
   font-size: 15px;
-  font-family: 'JetBrains Mono', monospace;
   font-weight: 500;
   margin-top: 0px;
 }
 
-.section-separator {
-  border: none;
-  height: 2px;
-  background-color: #4A443B; 
-  width: 80%;
-  margin: 2px 92px;
-}
+
 

@@ -30,10 +30,10 @@ function Contact() {
   return (
     
     <>
-    <div className="container">
+    <div className="container" >
       <div className="bloc_title">
-        <h2>Contact</h2>
-        <p className="subtitle">Je vous répond sous 48h</p>
+        <h2 id='contact'>Contact</h2>
+        <p className="subtitle">Création ou refonte de site internet</p>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-form_col">

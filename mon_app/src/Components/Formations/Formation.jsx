@@ -13,7 +13,7 @@ export default function Formation() {
   return (
     <div className="container">
       <div className="bloc_title">
-        <h2>Formation</h2>
+        <h2 id='formation'>Formation</h2>
         <p className="subtitle">Parcours et certifications, du découpage de PSD au <br />front moderne.</p>
       </div>
       <div className="formation-timeline">

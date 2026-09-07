@@ -2,10 +2,10 @@ import { useState } from 'react';
 import './Header.css';
 
 const NAV = [
-  {label:'Présentation', href:'#accueil'},
-  {label:'Projets', href:'#travaux'},
-  {label:'Compétences', href:'#methode'},
-  {label:'Cv', href:'#apropos'},
+  {label:'Présentation', href:'#presentation'},
+  {label:'Projets', href:'#projet'},
+  {label:'Compétences', href:'#competences'},
+  {label:'Cv', href:'#cv'},
   {label:'Formation', href:'#formation'},
   {label:'Contact', href:'#contact'},
 ];
@@ -15,7 +15,7 @@ export default function Header({ brand = 'Intégrateur Web', items = NAV }) {
 
   return (
     <header className="party-header">
-      <div className="party-header_brand">{brand}</div>
+      <h1 className="party-header_brand">{brand}</h1>
 
       <button
         className={`burger ${open ? 'is-open' : ''}`}
