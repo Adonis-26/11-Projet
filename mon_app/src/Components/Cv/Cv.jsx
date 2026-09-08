@@ -9,7 +9,7 @@ function Cv() {
     <div class="cv_body">
     <p class="cv_text cv_text--last">J'ai commencé à coder avec freeCodeCamp, puis j'ai enchainé avec les cours libre sur OpenClassRoom. J'ai pris goût et je me suis lancé.</p>
 
-    <a class="cv_download" href="/YAMB NDEBY Adonis.pdf" download>
+    <a className="cv_download" href="/Adonis.pdf" download>
         Télécharger le CV (PDF)
     </a>
     </div>

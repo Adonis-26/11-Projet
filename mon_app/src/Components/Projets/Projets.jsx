@@ -177,7 +177,7 @@ export default function ProjetsGrid() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="modal_repo_btn">
-                    
+                    Lien repo
                 </a>
               </>
             )}

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css'
 
 const initialFormData = {
@@ -11,6 +12,9 @@ const initialFormData = {
 function Contact() {
   const [formData, setFormData] = useState(initialFormData);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [error, setError] = useState(null);
+  const formRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,22 +23,38 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    setIsSending(true);
+    setError(null);
 
-    setIsModalOpen(true);
-    setFormData(initialFormData);
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
+      )
+      .then(() => {
+        setIsModalOpen(true);
+        setFormData(initialFormData);
+      })
+      .catch((err) => {
+        console.error(err);
+        setError("Une erreur est survenue, veuillez réessayer.");
+      })
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    
     <>
     <div className="container" >
       <div className="bloc_title">
         <h2 id='contact'>Contact</h2>
       </div>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
         <div className="contact-form_col">
           <div className="field">
             <label className="field_label" htmlFor="c-nom">
@@ -97,9 +117,11 @@ function Contact() {
           />
         </div>
 
+        {error && <p className="field_error">{error}</p>}
+
         <div className="contact-form_actions">
-          <button className="btn-envoyer" type="submit">
-            Envoyer
+          <button className="btn-envoyer" type="submit" disabled={isSending}>
+            {isSending ? 'Envoi...' : 'Envoyer'}
           </button>
         </div>
       </form>

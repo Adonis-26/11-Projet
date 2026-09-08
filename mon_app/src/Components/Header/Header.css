@@ -8,9 +8,6 @@
   color: #FAF6EF;
   font-family: 'verdana', sans-serif;
   box-sizing: border-box;
-  position: sticky;
-   top: 0;
-  z-index: 100;
 }
 
 .party-header_brand {
