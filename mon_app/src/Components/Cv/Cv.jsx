@@ -5,12 +5,9 @@ function Cv() {
     <div className="container">
       <div className="bloc_title">
         <h2 id='cv'>Curriculum vitae</h2>
-        <p className="subtitle">Six ans d'intégration front en direct avec des studios de design</p>
       </div>
     <div class="cv_body">
-    <p class="cv_lead">J'ai commencé à coder avec freeCodeCamp, puis j'ai enchainé avec les cours libre sur OpenClassRoom. J'ai pris goût et je me suis lancé.</p>
-    <p class="cv_text">Je travaille en direct pour rendre la maquette réelle, la garder solide quand le contenu change, et documenter ce que je livre pour que la personne d'après s'y retrouve.</p>
-    <p class="cv_text cv_text--last">Basé en région parienne, disponible à distance. Je réponds en français ou en anglais.</p>
+    <p class="cv_text cv_text--last">J'ai commencé à coder avec freeCodeCamp, puis j'ai enchainé avec les cours libre sur OpenClassRoom. J'ai pris goût et je me suis lancé.</p>
 
     <a class="cv_download" href="/YAMB NDEBY Adonis.pdf" download>
         Télécharger le CV (PDF)

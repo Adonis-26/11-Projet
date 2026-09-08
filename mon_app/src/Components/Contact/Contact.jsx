@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import { useState } from 'react';
 import './Contact.css'
 
 const initialFormData = {
@@ -33,7 +33,6 @@ function Contact() {
     <div className="container" >
       <div className="bloc_title">
         <h2 id='contact'>Contact</h2>
-        <p className="subtitle">Création ou refonte de site internet</p>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-form_col">

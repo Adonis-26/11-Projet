@@ -22,7 +22,6 @@ function Competences() {
     <div className="container">
         <div className="bloc_title">
           <h2 id='competences'>Compétences</h2>
-          <p className="subtitle">Trois étapes, de la lecture de la maquette à la <br />recette sur appareils réels.</p>
         </div>
       <div className="skills">
       <ul className="skills_list">

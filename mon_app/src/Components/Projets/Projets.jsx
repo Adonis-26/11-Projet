@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Modal from 'react-modal';
 import './Projets.css'
 import qwenta from '../../assets/qwenta.webp';
@@ -16,21 +16,21 @@ const projets = [
   {
     id: 'QWENTA',
     nom: 'QWENTA',
-    desc: 'Planifier le développement du site d\'un client',
+    desc: 'Planifier & développer un site client',
     meta: 'node Kanban · Figma · Suivi de projet',
     image: qwenta,
   },
   {
     id: 'ARGENT',
     nom: 'ARGENT BANK',
-    desc: 'Implémentation d\'une application bancaire',
+    desc: 'Implémentater l\'application bancaire',
     meta: 'vite · React Redux· MongoDB ·  API REST Swagger',
      image: argent,
   },
   {
     id: '724events',
-    nom: '724evets',
-    desc: "Débugger le site d'une agence d'événementiel",
+    nom: '724EVENTS',
+    desc: 'Débugger: Site d\'une agence d\'événementiel',
     meta: 'JavaScript · SCSS · React developer Tools' ,
      image: events,
   },
@@ -44,35 +44,35 @@ const projets = [
   {
     id: 'KASA',
     nom: 'KASA',
-    desc: "Créaton de site de location immobilière",
+    desc: "Création: Site de location immobilière",
     meta: 'React · Vite · CSS · JSON · Figma · Git & GitHub',
      image: kasa,
   },
   {
     id: 'ARCHITECTE',
     nom: 'ARCHITECTE INTERIEUR',
-    desc: 'Refonte de Portefolio de Sophie Bluel',
+    desc: 'Refonte: Portefolio Sophie Bluel',
     meta: 'HTML · JavaScript · CSS · API · Swagger · Git & GitHub',
      image: sophie,
   },
   {
     id: 'OHMYFOOD',
     nom: 'OHMYFOOD',
-    desc: 'Création de site de Restaurant rapide',
+    desc: 'Création: Site de Restaurant rapide',
     meta: 'HTML · SCSS · Figma · Git & GitHub',
      image: ohmyfood,
   },
    {
     id: 'BOOKI',
     nom: 'BOOKI',
-    desc: 'Création de site d\'une Agence de voyage',
+    desc: 'Création: Site Agence de voyage',
     meta: 'HTML · SCSS · Figma · Git & GitHub',
      image: booki,
   },
    {
     id: 'RIDING',
     nom: 'RIDING CITIES',
-    desc: 'Modifications à la demande du client',
+    desc: 'Refonte du site',
     meta: 'HTML · CSS',
      image: riding,
   },
@@ -126,7 +126,6 @@ export default function ProjetsGrid() {
      <div className="container">
       <div className="bloc_title">
         <h2 id="projet" >Projets</h2>
-           <p className="subtitle">Parcours et certifications, du découpage de PSD au <br />front moderne.</p>
           <div className="projets_grid">
             {projets.map((projet) => (
               <Projet key={projet.id} projet={projet} onOpen={handleOpen} />
