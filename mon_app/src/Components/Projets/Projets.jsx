@@ -19,62 +19,68 @@ const projets = [
     desc: 'Planifier & développer un site client',
     meta: 'node Kanban · Figma · Suivi de projet',
     image: qwenta,
-  },
-  {
-    id: 'ARGENT',
-    nom: 'ARGENT BANK',
-    desc: 'Implémentater l\'application bancaire',
-    meta: 'vite · React Redux· MongoDB ·  API REST Swagger',
-     image: argent,
+    lien: 'https://www.notion.so/3bce09efdbee8024812fd4f126b2f015?v=3bce09efdbee80539316000c1dd320d6&source=copy_link '
   },
   {
     id: '724events',
     nom: '724EVENTS',
     desc: 'Débugger: Site d\'une agence d\'événementiel',
     meta: 'JavaScript · SCSS · React developer Tools' ,
-     image: events,
+    image: events,
+    lien: 'https://09-projet-yn.vercel.app/'
   },
   {
     id: 'NINA',
     nom: 'NINA CARDUCCI',
     desc: 'Optimisation et référencement',
     meta: 'JavaScript · Lighthouse · Wave · 2024',
-     image: nina,
-  },
-  {
-    id: 'KASA',
-    nom: 'KASA',
-    desc: "Création: Site de location immobilière",
-    meta: 'React · Vite · CSS · JSON · Figma · Git & GitHub',
-     image: kasa,
-  },
-  {
-    id: 'ARCHITECTE',
-    nom: 'ARCHITECTE INTERIEUR',
-    desc: 'Refonte: Portefolio Sophie Bluel',
-    meta: 'HTML · JavaScript · CSS · API · Swagger · Git & GitHub',
-     image: sophie,
+    image: nina,
+    lien: 'https://08-projet-yn.vercel.app/'
   },
   {
     id: 'OHMYFOOD',
     nom: 'OHMYFOOD',
     desc: 'Création: Site de Restaurant rapide',
     meta: 'HTML · SCSS · Figma · Git & GitHub',
-     image: ohmyfood,
+    image: ohmyfood,
+    lien: 'https://04-projet-yn.vercel.app/',
   },
    {
     id: 'BOOKI',
     nom: 'BOOKI',
     desc: 'Création: Site Agence de voyage',
     meta: 'HTML · SCSS · Figma · Git & GitHub',
-     image: booki,
+    image: booki,
+    lien: 'https://03-projet-yn.vercel.app/'
   },
    {
     id: 'RIDING',
     nom: 'RIDING CITIES',
     desc: 'Refonte du site',
     meta: 'HTML · CSS',
-     image: riding,
+    image: riding,
+    lien: '',
+  },
+  {
+    id: 'ARCHITECTE',
+    nom: 'ARCHITECTE INTERIEUR',
+    desc: 'Refonte: Portefolio Sophie Bluel',
+    meta: 'HTML · JavaScript · CSS · API · Swagger · Git & GitHub',
+    image: sophie,
+  },
+   {
+    id: 'KASA',
+    nom: 'KASA',
+    desc: "Création: Site de location immobilière",
+    meta: 'React · Vite · CSS · JSON · Figma · Git & GitHub',
+    image: kasa,
+  },
+   {
+    id: 'ARGENT',
+    nom: 'ARGENT BANK',
+    desc: 'Implémentater l\'application bancaire',
+    meta: 'vite · React Redux· MongoDB ·  API REST Swagger',
+     image: argent,
   },
 ];
 
@@ -144,11 +150,13 @@ export default function ProjetsGrid() {
                     x
                   </button>
                   <div className="modal_media">
+                    <a href={selectedProjet.lien} target="_blank" rel="noopener noreferrer">
                      <img
                         src={selectedProjet.image}
                         alt={`Capture du projet ${selectedProjet.nom}`}
                         className="modal_img"
                       />
+                      </a>
                   </div>
                   <p className="modal_description">{selectedProjet.desc}</p>
                   <p className="modal_meta">{selectedProjet.meta}</p>
