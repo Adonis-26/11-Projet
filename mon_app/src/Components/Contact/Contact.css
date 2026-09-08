@@ -77,36 +77,6 @@
   outline-offset: 3px;
 }
 
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.modal {
-  background: #FAF6EF;
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 400px;
-  width: 90%;
-}
-
-.modal_title {
-  margin-top: 0;
-}
-
-.modal_desc{
-  font-size: 17px;
-  text-align: center;
-}
-.modal_close {
-  margin-top: 1rem;
-}
-
 @media (max-width: 900px) {
   .contact {
     margin: 96px 32px 0;

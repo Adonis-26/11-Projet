@@ -11,7 +11,6 @@ const initialFormData = {
 
 function Contact() {
   const [formData, setFormData] = useState(initialFormData);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSending, setIsSending] = useState(false);
   const [error, setError] = useState(null);
   const formRef = useRef(null);
@@ -34,7 +33,6 @@ function Contact() {
         { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
       )
       .then(() => {
-        setIsModalOpen(true);
         setFormData(initialFormData);
       })
       .catch((err) => {
@@ -45,8 +43,6 @@ function Contact() {
         setIsSending(false);
       });
   };
-
-  const closeModal = () => setIsModalOpen(false);
 
   return (
     <>
@@ -125,20 +121,6 @@ function Contact() {
           </button>
         </div>
       </form>
-
-      {isModalOpen && (
-        <div className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-          <div className="modal">
-           
-            <p className="modal_desc">
-              Merci, votre message a bien été envoyé. Je reviens vers vous rapidement.
-            </p>
-            <button className="modal_close" type="button" onClick={closeModal}>
-              X
-            </button>
-          </div>
-        </div>
-      )}
       </div>
     </>
   );
