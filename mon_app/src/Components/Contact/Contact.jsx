@@ -15,11 +15,22 @@ function Contact() {
   const [error, setError] = useState(null);
   const formRef = useRef(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+ 
+  const sanitizeInput = (value) => {
+    
+  return value.replace(/<[^>]*>?/gm, '');
+};
 
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  let sanitizedValue = sanitizeInput(value);
+
+  if (name === 'message') {
+    sanitizedValue = sanitizedValue.slice(0, 500);
+  }
+
+  setFormData((prev) => ({ ...prev, [name]: sanitizedValue }));
+};
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -61,8 +72,10 @@ function Contact() {
               id="c-nom"
               name="nom"
               type="text"
+              placeholder="Votre Nom"
               value={formData.nom}
               onChange={handleChange}
+              minLength={2}
               required
             />
           </div>
@@ -76,24 +89,27 @@ function Contact() {
               id="c-prenom"
               name="prenom"
               type="text"
+              placeholder="Votre Prenom"
               value={formData.prenom}
               onChange={handleChange}
+              minLength={2}
               required
             />
           </div>
 
           <div className="field">
             <label className="field_label" htmlFor="c-mail">
-              Adresse mail
-            </label>
-            <input
-              className="field_input"
-              id="c-mail"
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
+                Adresse mail
+              </label>
+              <input
+                className="field_input"
+                id="c-mail"
+                name="email"
+                type="email"
+                placeholder="exemple@email.com"
+                value={formData.email}
+                onChange={handleChange}
+                required
             />
           </div>
         </div>
@@ -107,8 +123,10 @@ function Contact() {
             id="c-message"
             name="message"
             rows="9"
+            placeholder="entrez votre message"
             value={formData.message}
             onChange={handleChange}
+             maxLength={500}
             required
           />
         </div>
