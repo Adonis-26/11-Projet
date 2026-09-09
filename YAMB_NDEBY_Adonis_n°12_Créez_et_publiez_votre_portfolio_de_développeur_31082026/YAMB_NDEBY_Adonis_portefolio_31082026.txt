@@ -1,2 +1,0 @@
-Lien: https://11-projet-ftin.vercel.app/
-repo: https://github.com/Adonis-26/11-Projet/commits/main/
