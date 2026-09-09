@@ -1,8 +1,8 @@
 .projets_grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1.5rem;
-  margin-top: 5%;
+  padding: 2% 15% 0% 15%;
 }
 
 .projet {
@@ -175,6 +175,7 @@
   
   .subtitle {
     padding: 0% 20% 5%;
+ 
   }
 }
 @media (min-width: 1440px) {
