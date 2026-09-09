@@ -1,4 +1,4 @@
-import Page from './Page/page.jsx';
+import Page from './Page/Page.jsx';
 
 function App() {
   return (
