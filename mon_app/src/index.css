@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   font-family: 'verdana', sans-serif;
   background-color: #F5F0E8;
@@ -39,11 +39,10 @@ h2{
   font-weight: 600;
 }
 
-
-
-@media (min-width: 1440px) {
-  .container {
-    width: 80%;
-    padding: 0px 20px 0% 20%;
-  }
+ @media (min-width: 1024px) { 
+ .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
+ }
