@@ -99,17 +99,19 @@
 @media (max-width: 768px) {
   .party-header {
     padding: 1.2em 1.5em;
+    position: relative;
   }
 
   .burger {
     display: flex;
   }
 
-  .party-header_nav {
+   .party-header_nav {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
+    z-index: 15;
     flex-direction: column;
     gap: 0;
     background: #2F5D50;
@@ -122,6 +124,9 @@
     max-height: 400px;
   }
 
+  .party-header_nav.is-open:active {
+    background: #1C3830;
+  }
   .navlink {
     padding: 16px 1.5em;
     border-top: 1px solid rgba(250, 246, 239, 0.15);
