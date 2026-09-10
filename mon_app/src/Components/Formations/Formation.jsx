@@ -14,6 +14,10 @@ export default function Formation() {
     <div className="container">
       <div className="bloc_title">
         <h2 id='formation'>Formation</h2>
+        <div className='line'>
+            <div className='carre'/>
+            <hr />
+        </div>
       </div>
       <div className="formation-timeline">
         {FORMATIONS.map(({ year, title, org }) => (

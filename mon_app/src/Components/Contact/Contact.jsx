@@ -60,6 +60,10 @@ const handleChange = (e) => {
     <div className="container" >
       <div className="bloc_title">
         <h2 id='contact'>Contact</h2>
+        <div className='line'>
+            <div className='carre'/>
+            <hr />
+        </div>
       </div>
       <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
         <div className="contact-form_col">

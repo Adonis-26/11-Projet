@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1.5rem;
-  padding: 2% 15% 0% 15%;
+  padding: 2% 15% 5% 15%;
 }
 
 .projet {
@@ -11,9 +11,10 @@
   border-radius: 8px;
   overflow: hidden;
   background: white;
-  transform: translateY(-6px);
-  box-shadow: 0 30px 60px -30px rgba(26, 24, 21, 0.32);
-  border: #CFC3AE;
+  border: 1px solid #CFC3AE;
+   box-shadow: 0 30px 60px -30px rgba(26, 24, 21, 0.32);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .projet_img {
@@ -22,6 +23,13 @@
   object-fit: cover;
   display: block;
 }
+
+.projet:hover {
+ transform: translateY(-6px) scale(1.05);
+  z-index: 1;
+  box-shadow: 0 30px 60px -30px rgba(26, 24, 21, 0.45);
+}
+
 
 .modal_img {
   width: 100%;
@@ -97,10 +105,15 @@
   outline: none; 
 }
 
+.modal:hover,
+.modal:focus-visible {
+  background: #d8d8d8;
+}
+
 .modal_close {
   position: absolute;
-  top: 6%;
-  right: 5%;
+  top: 2.5%;
+  right: 2.5%;
   background: #2F5D50;
   font-size: 108%;
   line-height: 27px;
@@ -114,7 +127,7 @@
 
 .modal_close:hover,
 .modal_close:focus-visible {
-  color: #000;
+  background: #244840;
 }
 
 .modal_media {
@@ -129,7 +142,7 @@
 
 .modal_title {
   margin: 0 0 0.75rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #2F5D50;
 }
 
@@ -160,23 +173,46 @@
 
 .modal_repo_btn {
   position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  right: 2.5%;
+  bottom: 2%;
   background-color: #2F5D50;
   color: #fff;
-  padding: 0.5rem 1.2rem;
+  padding: 5px 4px;
   border-radius: 6px;
   font-size: 0.85rem;
   text-decoration: none;
   transition: opacity 0.2s;
+  font-family: 'JetBrains Mono', monospace;
+}
+.modal_repo_btn:hover,
+.modal_repo_btn :focus-visible {
+ background: #244840;
 }
 
 @media (max-width: 768px) {
   
   .subtitle {
     padding: 0% 20% 5%;
- 
   }
+
+  .modal_meta {
+    font-size: 0.7rem;
+}
+
+.modal_title {
+  font-size: 1rem;
+}
+
+.modal_description {
+  font-size: 14px ;
+}
+
+
+.modal_close {
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+}
 }
 @media (min-width: 1440px) {
   .projets_grid {

@@ -22,6 +22,10 @@ function Competences() {
     <div className="container">
         <div className="bloc_title">
           <h2 id='competences'>Compétences</h2>
+          <div className='line'>
+            <div className='carre'/>
+            <hr />
+        </div>
         </div>
       <div className="skills">
       <ul className="skills_list">

@@ -107,8 +107,10 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     transform: 'translate(-50%, -50%)',
-    maxWidth: '600px',
-    width: '100%',
+    maxWidth: '500px',
+    width: '90%',
+    maxHeigth: '600px',
+    heigth: '80%',
     borderRadius: '8px',
     padding: '2rem',
   },
@@ -144,6 +146,10 @@ export default function ProjetsGrid() {
     <div className="container">
       <div className="bloc_title">
         <h2 id="projet">Projets</h2>
+        <div className='line'>
+            <div className='carre'/>
+            <hr />
+        </div>
         <div className="projets_grid">
           {projets.map((projet) => (
             <Projet key={projet.id} projet={projet} onOpen={handleOpen} />
