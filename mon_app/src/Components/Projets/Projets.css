@@ -62,6 +62,7 @@
 
 .projet_body{
   padding: 1rem;
+  text-align: start;
 }
 
 .projet_name {
@@ -212,6 +213,9 @@
   position: absolute;
   top: 2.5%;
   right: 2.5%;
+}
+.projet_name {
+  font-size: 1rem;
 }
 }
 @media (min-width: 1440px) {
