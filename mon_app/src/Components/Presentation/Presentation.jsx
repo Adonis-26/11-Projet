@@ -10,7 +10,7 @@ function presentation() {
             <hr />
         </div>
         <div className='bloc_presentation'>
-           <img className="presentation_image" src='/profile.webp' alt="Photo de profil" />
+           <img className="presentation_image" src='/profile.webp' alt="Photo_de_profil" fetchPriority="high" />
            <p className='text_presentation'>
           Après 10 ans d’expérience en informatique, je me reconvertis dans le <strong>développement web</strong>. 
           Actuellement en formation <strong>Intégrateur Web chez OpenClassrooms</strong>, je mets mon expertise technique et ma rigueur 
