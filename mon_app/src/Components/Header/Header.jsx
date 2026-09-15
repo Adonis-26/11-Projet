@@ -5,7 +5,6 @@ const NAV = [
   {label:'Présentation', href:'#presentation'},
   {label:'Projets', href:'#projet'},
   {label:'Compétences', href:'#competences'},
-  {label:'Cv', href:'#cv'},
   {label:'Formation', href:'#formation'},
   {label:'Contact', href:'#contact'},
 ];

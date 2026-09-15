@@ -80,6 +80,8 @@ const handleChange = (e) => {
               value={formData.nom}
               onChange={handleChange}
               minLength={2}
+              pattern="[A-Za-zÀ-ÿ]+(?:[\s'-][A-Za-zÀ-ÿ]+)*"
+              title="Entrez uniquement des lettres"
               required
             />
           </div>
@@ -97,6 +99,8 @@ const handleChange = (e) => {
               value={formData.prenom}
               onChange={handleChange}
               minLength={2}
+              pattern="[A-Za-zÀ-ÿ]+(?:[\s'-][A-Za-zÀ-ÿ]+)*"
+              title="Entrez uniquement des lettres"
               required
             />
           </div>
@@ -113,6 +117,8 @@ const handleChange = (e) => {
                 placeholder="exemple@email.com"
                 value={formData.email}
                 onChange={handleChange}
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Veuillez entrer une adresse email valide (ex: nom@domaine.com)"
                 required
             />
           </div>
