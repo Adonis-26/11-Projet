@@ -192,6 +192,9 @@
 
 @media (max-width: 768px) {
   
+  .projets_grid {
+    margin-top: 5%;
+  }
   .subtitle {
     padding: 0% 20% 5%;
   }

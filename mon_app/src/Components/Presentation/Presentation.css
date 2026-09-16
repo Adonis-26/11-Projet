@@ -22,13 +22,22 @@
 
 
 .presentation_image{
-  width: 30%;
+  width: 20%;
   transform: translateY(-6px);
   box-shadow: 0 30px 60px -30px rgba(26, 24, 21, 0.32);
   border-radius: 9%;   
 }
 .text_presentation{
-  padding: 1% 5% 2% 0%;
+  font-family: 'Verdana', sans-serif;
+  padding: 0% 21% 0% 0%;
+}
+
+.nom{
+  font-size: 25px;
+  font-family: 'verdana';
+  color: #244840;
+  font-weight: 600;
+  margin: 5px 0px 5px 0px;
 }
 
 .cv_download {
@@ -46,12 +55,13 @@
   padding: 14px 28px;
   cursor: pointer;
   list-style: none;
-  margin: 15px 15px 0px 0px;
+  margin: 15px 15px 97px 0px;
 }
 
 #contact_presentation {
   display: inline-flex;
   align-items: center;
+  text-align: justify;
   gap: 10px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
@@ -95,6 +105,15 @@
 }
 
 @media (max-width: 768px) {
+  .cv_download {
+     margin: 15px 15px 0px 0px;
+  }
+
+  #contact_presentation {
+    margin: 15px 0px
+     0px 0px;
+  }
+
   .bloc_presentation {
     flex-direction: column;
     margin-bottom: 2%;
@@ -103,10 +122,10 @@
   
  .presentation_image {
     width: 100%;
-    margin: 5%;
+    margin: 7% 0% 1% 0%;
   }
 
-    .text_presentation{
+  .text_presentation{
   padding: 1% 5% 0% 0%;
 }
 

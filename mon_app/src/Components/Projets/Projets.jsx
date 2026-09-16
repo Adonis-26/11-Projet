@@ -118,15 +118,22 @@ const customStyles = {
 
 function Projet({ projet, onOpen }) {
   return (
-    <article className="projet">
-      <button
-        className="projet_media"
-        type="button"
-        aria-label={`Ouvrir ${projet.nom}`}
-        onClick={() => onOpen(projet)}
-      >
+    <article
+      className="projet"
+      role="button"
+      tabIndex={0}
+      aria-label={`Ouvrir ${projet.nom}`}
+      onClick={() => onOpen(projet)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onOpen(projet);
+        }
+      }}
+    >
+      <div className="projet_media">
         <img src={projet.image} alt={`Capture du projet ${projet.nom}`} className="projet_img" />
-      </button>
+      </div>
       <div className="projet_body">
         <h3 className="projet_name">{projet.nom}</h3>
         <p className="projet_desc">{projet.desc}</p>
