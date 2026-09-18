@@ -10,8 +10,7 @@
   flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
-  background: white;
-  border: 1px solid #CFC3AE;
+  background: rgb(236, 233, 233);
    box-shadow: 0 30px 60px -30px rgba(26, 24, 21, 0.32);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -41,7 +40,7 @@
   padding: 0;
   cursor: pointer;
   aspect-ratio: 16 / 10;
-  background: #e5e5e5;
+  background: #5d3c3c;
   display: flex;
   align-items: center;
   justify-content: center;
