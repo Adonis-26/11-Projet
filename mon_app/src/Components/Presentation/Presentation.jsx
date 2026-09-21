@@ -33,7 +33,6 @@ function presentation() {
             <a className="cv_download" href="/adonis-YN-DEV.pdf.pdf" download>
             Télécharger le CV
             </a>
-
          
            </article>
           
