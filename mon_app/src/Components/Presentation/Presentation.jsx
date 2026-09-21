@@ -30,7 +30,7 @@ function presentation() {
             <a id="contact_presentation" href="#contact">
             contact
             </a>
-            <a className="cv_download" href="/Adonis.pdf" download>
+            <a className="cv_download" href="/adonis-YN-DEV.pdf.pdf" download>
             Télécharger le CV
             </a>
 
