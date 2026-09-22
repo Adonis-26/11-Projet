@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   text-align: center;
   margin-bottom: 15px;
-  overflow: auto;
+  overflow:scroll;
 }
 
 h2{

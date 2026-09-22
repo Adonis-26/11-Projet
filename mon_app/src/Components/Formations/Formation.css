@@ -105,9 +105,11 @@
   margin: 0 0 10px;
 }
 
-
 @media (max-width: 768px) {
   .formation-timeline {
     padding: 0% 5% 15% 5%;
+}
+.formation-heading {
+    font-size: 12px;
 }
 }
