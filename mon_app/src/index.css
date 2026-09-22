@@ -24,7 +24,6 @@ body {
   flex-direction: column;
   text-align: center;
   margin-bottom: 15px;
-  overflow:scroll;
 }
 
 h2{
@@ -41,7 +40,7 @@ h2{
 }
 
 .line {
-   display: flex;
+  display: flex;
   align-items: center;
   gap: 0.2%;
   max-width: 90%;
