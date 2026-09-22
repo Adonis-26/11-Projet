@@ -91,8 +91,8 @@ const projets = [
     desc: 'Refonte du site',
     meta: 'HTML · CSS',
     image: riding,
-    lien: '',
-    repo: '',
+    lien: 'https://02-projet-git-main-team-integrateur-web.vercel.app/',
+    repo: 'https://github.com/Adonis-26/02-Projet',
   },
 ];
 
