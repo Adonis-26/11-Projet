@@ -1,0 +1,127 @@
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formulaire__champ {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.formulaire__label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--noir);
+}
+
+.formulaire__label span {
+  color: var(--rouge);
+}
+
+.formulaire__input {
+  width: 100%;
+  padding: 0.95rem 1.1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--noir);
+  background-color: var(--gris-2);
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: border-color var(--transition), background-color var(--transition);
+}
+
+.formulaire__input::placeholder {
+  color: var(--gris-4);
+}
+
+.formulaire__input:focus {
+  outline: none;
+  background-color: var(--blanc);
+  border-color: var(--vert);
+}
+
+.formulaire__input--zone {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.formulaire__sous-champ {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.formulaire__compteur {
+  margin: 0;
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-align: right;
+  color: var(--gris-4);
+}
+
+.formulaire__alerte {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--rouge);
+}
+
+.formulaire__message {
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+.formulaire__message--succes {
+  color: var(--vert);
+  background-color: rgba(47, 90, 74, 0.08);
+  border-left: 3px solid var(--vert);
+}
+
+.formulaire__message--erreur {
+  color: var(--rouge);
+  background-color: rgba(237, 28, 36, 0.07);
+  border-left: 3px solid var(--rouge);
+}
+
+.formulaire__envoi {
+  align-self: flex-start;
+  padding: 1rem 3rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blanc);
+  background-color: var(--vert);
+  transition: background-color var(--transition);
+}
+
+.formulaire__envoi:hover:not(:disabled),
+.formulaire__envoi:focus-visible:not(:disabled) {
+  background-color: var(--vert-fonce);
+}
+
+.formulaire__envoi:disabled {
+  cursor: progress;
+  opacity: 0.65;
+}
+
+@media (min-width: 700px) {
+  .formulaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1.75rem;
+  }
+  .formulaire__champ:nth-child(3),
+  .formulaire__champ:nth-child(4),
+  .formulaire__message,
+  .formulaire__envoi {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,72 @@
+.carte-projet {
+  height: 100%;
+}
+
+.carte-projet__lien {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.carte-projet__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background-color: var(--gris-2);
+}
+
+.carte-projet__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.carte-projet__lien:hover .carte-projet__media img,
+.carte-projet__lien:focus-visible .carte-projet__media img {
+  transform: scale(1.05);
+}
+
+/* Bandeau technologies au survol */
+.carte-projet__stack {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 0.85rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--blanc);
+  background-color: rgba(47, 90, 74, 0.94);
+  transform: translateY(100%);
+  transition: transform var(--transition);
+}
+
+.carte-projet__lien:hover .carte-projet__stack,
+.carte-projet__lien:focus-visible .carte-projet__stack {
+  transform: translateY(0);
+}
+
+.carte-projet__titre {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.carte-projet__description {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--gris-4);
+}
+
+@media (hover: none) {
+  .carte-projet__stack {
+    position: static;
+    transform: none;
+    background-color: transparent;
+    color: var(--vert);
+    padding-inline: 0;
+  }
+}

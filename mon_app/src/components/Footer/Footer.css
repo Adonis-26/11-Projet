@@ -1,0 +1,174 @@
+.footer {
+  color: var(--blanc);
+  background-color: var(--noir-doux);
+}
+
+/* ---------- corps ---------- */
+.footer__grille {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  padding-block: clamp(3rem, 7vw, 5rem);
+  grid-template-columns: 1fr;
+}
+
+.footer__bloc--marque {
+  max-width: 34ch;
+}
+
+.footer__nom {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+}
+
+.footer__role {
+  margin: 0.15rem 0 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vert-clair);
+}
+
+.footer__baseline {
+  margin-bottom: 1.75rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--gris-3);
+}
+
+.footer__repo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background-color: var(--vert);
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.footer__repo svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer__repo:hover,
+.footer__repo:focus-visible {
+  background-color: var(--vert-clair);
+  transform: translateY(-2px);
+}
+
+/* ---------- colonnes ---------- */
+.footer__titre {
+  margin-bottom: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blanc);
+}
+
+.footer__liste {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footer__item,
+.footer__lien {
+  font-size: 0.95rem;
+  color: var(--gris-3);
+}
+
+.footer__lien {
+  position: relative;
+  display: inline-block;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.footer__lien:hover,
+.footer__lien:focus-visible {
+  color: var(--blanc);
+  transform: translateX(4px);
+}
+
+/* ---------- barre légale ---------- */
+.footer__bas {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footer__bas-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding-block: 1.5rem;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--gris-4);
+}
+
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Appliqué aux liens comme au bouton « Gérer les cookies ». */
+.footer__lien-legal {
+  padding: 0;
+  font-size: 0.82rem;
+  text-align: left;
+  color: var(--gris-3);
+  transition: color var(--transition);
+}
+
+.footer__lien-legal:hover,
+.footer__lien-legal:focus-visible {
+  color: var(--blanc);
+  text-decoration: underline;
+}
+
+.footer__haut {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gris-3);
+  transition: color var(--transition);
+}
+
+.footer__haut svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__haut:hover,
+.footer__haut:focus-visible {
+  color: var(--blanc);
+}
+
+/* ---------- responsive ---------- */
+@media (min-width: 640px) {
+  .footer__grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer__grille {
+    grid-template-columns: 1.8fr 1fr 1.2fr;
+  }
+}

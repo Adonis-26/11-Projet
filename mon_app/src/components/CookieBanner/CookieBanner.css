@@ -1,0 +1,156 @@
+.cookies {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 200;
+  color: var(--blanc);
+  background-color: var(--noir-doux);
+  border-top: 3px solid var(--vert);
+  animation: cookies-apparition 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes cookies-apparition {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.cookies__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: clamp(1.25rem, 3vw, 1.75rem) var(--gutter);
+}
+
+/* ---------- texte ---------- */
+.cookies__titre {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vert-clair);
+}
+
+.cookies__texte p {
+  margin: 0;
+  max-width: 70ch;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--gris-3);
+}
+
+.cookies__lien {
+  color: var(--blanc);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cookies__lien:hover,
+.cookies__lien:focus-visible {
+  color: var(--vert-clair);
+}
+
+/* ---------- boutons ----------
+   Refuser et Accepter ont la même taille et le même poids visuel :
+   le refus doit être aussi simple que l'acceptation. */
+.cookies__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cookies__bouton {
+  flex: 1 1 auto;
+  min-width: 140px;
+  padding: 0.85rem 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: background-color var(--transition), color var(--transition),
+    border-color var(--transition);
+}
+
+.cookies__bouton--refus {
+  color: var(--blanc);
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.cookies__bouton--refus:hover,
+.cookies__bouton--refus:focus-visible {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--blanc);
+}
+
+.cookies__bouton--accord {
+  color: var(--blanc);
+  background-color: var(--vert);
+}
+
+.cookies__bouton--accord:hover,
+.cookies__bouton--accord:focus-visible {
+  background-color: var(--vert-clair);
+}
+
+/* ---------- confirmation ---------- */
+.cookies-confirmation {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 200;
+  margin: 0;
+  padding: 0.9rem var(--gutter);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: var(--blanc);
+  background-color: var(--vert);
+  animation: cookies-confirmation 4s forwards;
+}
+
+@keyframes cookies-confirmation {
+  0% {
+    transform: translateY(100%);
+  }
+  10%,
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
+}
+
+/* ---------- responsive ---------- */
+@media (min-width: 800px) {
+  .cookies__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+  .cookies__actions {
+    flex: none;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cookies,
+  .cookies-confirmation {
+    animation: none;
+  }
+  .cookies-confirmation {
+    display: none;
+  }
+}

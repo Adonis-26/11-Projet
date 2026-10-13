@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.app__contenu {
+  flex: 1;
+}
+
+/* Pages intérieures : on compense l'en-tête fixe. */
+.app__contenu--decale {
+  padding-top: var(--header-h);
+}

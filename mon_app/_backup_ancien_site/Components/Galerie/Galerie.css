@@ -1,0 +1,51 @@
+.galerie {
+  width: 70%;
+  overflow: hidden;
+  margin: 24px -10px 0px 209px;
+}
+
+.galerie_piste {
+  display: flex;
+  width: max-content;
+  animation: defilement linear infinite;
+  
+}
+
+.galerie:hover .galerie_piste {
+  animation-play-state: paused;
+}
+
+.galerie_item {
+  flex-shrink: 0;
+  padding-right: 1.5rem;
+}
+
+.galerie_item img {
+  display: block;
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@keyframes defilement {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .galerie__item img {
+    width: 240px;
+    height: 165px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .galerie__piste {
+    animation: none;
+  }
+}

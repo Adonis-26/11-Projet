@@ -1,0 +1,74 @@
+.accordeon {
+  border-top: 1px solid var(--noir);
+}
+
+.accordeon__item {
+  border-bottom: 1px solid var(--noir);
+}
+
+.accordeon__entete {
+  margin: 0;
+}
+
+.accordeon__bouton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  padding: clamp(1rem, 2.5vw, 1.5rem) 0;
+  text-align: left;
+  transition: color var(--transition);
+}
+
+.accordeon__bouton:hover,
+.accordeon__bouton:focus-visible {
+  color: var(--vert);
+}
+
+.accordeon__titre {
+  font-size: clamp(1.1rem, 2.6vw, 1.55rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.accordeon__chevron {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  transition: transform var(--transition);
+}
+
+.accordeon__chevron svg {
+  width: 22px;
+  height: 22px;
+}
+
+.accordeon__chevron--ouvert {
+  transform: rotate(180deg);
+}
+
+.accordeon__panneau {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--transition);
+}
+
+.accordeon__panneau--ouvert {
+  grid-template-rows: 1fr;
+}
+
+.accordeon__contenu {
+  overflow: hidden;
+}
+
+.accordeon__contenu p {
+  margin: 0;
+  padding-bottom: 1.5rem;
+  max-width: 60ch;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--gris-4);
+}

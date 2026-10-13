@@ -1,0 +1,45 @@
+.cta-band {
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+  color: var(--blanc);
+  background-color: var(--vert);
+}
+
+.cta-band__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.cta-band__texte {
+  max-width: 20ch;
+  margin: 0;
+  font-size: var(--fs-h2);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.cta-band__bouton {
+  display: inline-block;
+  padding: 1rem 2.75rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blanc);
+  background-color: var(--noir);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.cta-band__bouton:hover,
+.cta-band__bouton:focus-visible {
+  color: var(--noir);
+  background-color: var(--blanc);
+}
+
+@media (min-width: 900px) {
+  .cta-band__texte {
+    max-width: 28ch;
+  }
+}

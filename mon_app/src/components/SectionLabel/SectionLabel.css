@@ -1,0 +1,40 @@
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.section-label__marker {
+  flex: none;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 11px solid currentColor;
+}
+
+.section-label--dark {
+  color: var(--noir);
+}
+
+.section-label--light {
+  color: var(--blanc);
+}
+
+.section-label--green {
+  color: var(--vert);
+}
+
+@media (max-width: 600px) {
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+}

@@ -1,0 +1,74 @@
+.carrousel {
+  position: relative;
+}
+
+.carrousel__piste {
+  display: flex;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gris-3) transparent;
+  padding-bottom: 1.5rem;
+}
+
+.carrousel__piste::-webkit-scrollbar {
+  height: 4px;
+}
+
+.carrousel__piste::-webkit-scrollbar-thumb {
+  background-color: var(--gris-3);
+}
+
+.carrousel__item {
+  flex: 0 0 min(86%, 360px);
+  scroll-snap-align: start;
+}
+
+.carrousel__commandes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.carrousel__fleche {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--vert);
+  border: 1px solid var(--gris-3);
+  transition: color var(--transition), background-color var(--transition),
+    border-color var(--transition);
+}
+
+.carrousel__fleche svg {
+  width: 22px;
+  height: 22px;
+}
+
+.carrousel__fleche:hover:not(:disabled),
+.carrousel__fleche:focus-visible:not(:disabled) {
+  color: var(--blanc);
+  background-color: var(--vert);
+  border-color: var(--vert);
+}
+
+.carrousel__fleche:disabled {
+  color: var(--gris-3);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media (min-width: 700px) {
+  .carrousel__item {
+    flex-basis: 46%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .carrousel__item {
+    flex-basis: 31%;
+  }
+}

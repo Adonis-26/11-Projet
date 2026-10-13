@@ -1,0 +1,18 @@
+.projets-grille {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 3vw, 2.25rem);
+  grid-template-columns: 1fr;
+  list-style: none;
+}
+
+@media (min-width: 640px) {
+  .projets-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .projets-grille {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

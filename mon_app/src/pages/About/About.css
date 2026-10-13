@@ -1,0 +1,73 @@
+.apropos-intro__grille {
+  display: grid;
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.apropos-intro__visuel {
+  max-width: 340px;
+  background-color: var(--noir);
+}
+
+.apropos-intro__visuel img {
+  width: 100%;
+  height: auto;
+}
+
+.apropos-intro__texte {
+  margin: 0;
+  max-width: 60ch;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--gris-5);
+}
+
+@media (min-width: 900px) {
+  .apropos-intro__grille {
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  }
+  .apropos-intro__visuel {
+    max-width: none;
+  }
+}
+
+.apropos-savoir-faire {
+  padding-top: 0;
+}
+
+.apropos-savoir-faire__grille {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: 1fr;
+  padding-top: clamp(2.5rem, 6vw, 4rem);
+  border-top: 1px solid var(--gris-3);
+}
+
+.apropos-savoir-faire__titre {
+  font-size: var(--fs-h2);
+  letter-spacing: -0.03em;
+}
+
+.apropos-savoir-faire__visuel {
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+  overflow: hidden;
+  background-color: var(--gris-2);
+}
+
+.apropos-savoir-faire__visuel img {
+  width: 100%;
+  height: auto;
+}
+
+.apropos-savoir-faire__colonne p {
+  max-width: 56ch;
+  line-height: 1.85;
+  color: var(--gris-5);
+}
+
+@media (min-width: 900px) {
+  .apropos-savoir-faire__grille {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  }
+}
