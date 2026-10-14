@@ -12,6 +12,15 @@
   background-repeat: no-repeat;
 }
 
+/* En mobile, le héros n'occupe qu'une partie de l'écran plutôt que sa
+   totalité : la suite de la page s'amorce dès le premier coup d'œil. */
+@media (max-width: 639px) {
+  .heros {
+    min-height: 55svh;
+    padding-block: clamp(3.5rem, 12vw, 5rem) clamp(2rem, 7vw, 3rem);
+  }
+}
+
 .heros__voile {
   position: absolute;
   inset: 0;
@@ -75,6 +84,14 @@
 .accueil-apropos__visuel img {
   width: 100%;
   height: auto;
+}
+
+/* En mobile, le portrait est réduit et centré dans la colonne. */
+@media (max-width: 639px) {
+  .accueil-apropos__visuel {
+    max-width: 210px;
+    margin-inline: auto;
+  }
 }
 
 .accueil-apropos__titre {

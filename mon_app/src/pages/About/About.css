@@ -15,6 +15,14 @@
   height: auto;
 }
 
+/* En mobile, le portrait est réduit et centré dans la colonne. */
+@media (max-width: 639px) {
+  .apropos-intro__visuel {
+    max-width: 210px;
+    margin-inline: auto;
+  }
+}
+
 .apropos-intro__texte {
   margin: 0;
   max-width: 60ch;
@@ -28,7 +36,8 @@
     grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
   }
   .apropos-intro__visuel {
-    max-width: none;
+    display: flex;
+    justify-content: center;
   }
 }
 

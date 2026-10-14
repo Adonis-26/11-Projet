@@ -161,6 +161,16 @@
 }
 
 /* ---------- responsive ---------- */
+
+/* Sur mobile, le pied de page se limite à la marque et à la barre légale :
+   la navigation est déjà accessible depuis le menu. */
+@media (max-width: 639px) {
+  .footer__bloc--navigation,
+  .footer__bloc--prestations {
+    display: none;
+  }
+}
+
 @media (min-width: 640px) {
   .footer__grille {
     grid-template-columns: repeat(2, 1fr);

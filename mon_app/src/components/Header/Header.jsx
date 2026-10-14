@@ -5,8 +5,9 @@ import "./Header.css";
 const liens = [
   { to: "/", label: "Accueil", end: true },
   { to: "/a-propos", label: "A propos" },
-  { to: "/services", label: "Services" },
   { to: "/projets", label: "Projets" },
+  { to: "/services", label: "Services" },
+  
 ];
 
 function Header() {

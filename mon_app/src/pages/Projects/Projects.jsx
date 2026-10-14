@@ -20,7 +20,7 @@ function Projects() {
           <ul className="projets-grille">
             {projets.map((projet) => (
               <li key={projet.id}>
-                <ProjectCard projet={projet} />
+                <ProjectCard projet={projet} variant="liste" />
               </li>
             ))}
           </ul>

@@ -46,7 +46,10 @@ function Footer() {
         </div>
 
         {/* Navigation */}
-        <nav className="footer__bloc" aria-label="Navigation du pied de page">
+        <nav
+          className="footer__bloc footer__bloc--navigation"
+          aria-label="Navigation du pied de page"
+        >
           <h2 className="footer__titre">Navigation</h2>
           <ul className="footer__liste">
             {navigation.map((lien) => (
@@ -60,7 +63,7 @@ function Footer() {
         </nav>
 
         {/* Prestations */}
-        <div className="footer__bloc">
+        <div className="footer__bloc footer__bloc--prestations">
           <h2 className="footer__titre">Prestations</h2>
           <ul className="footer__liste">
             {prestations.map((item) => (

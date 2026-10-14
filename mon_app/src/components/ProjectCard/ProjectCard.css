@@ -47,6 +47,10 @@
   transform: translateY(0);
 }
 
+.carte-projet__corps {
+  flex: 1;
+}
+
 .carte-projet__titre {
   margin: 1.5rem 0 0.5rem;
   font-size: 1.05rem;
@@ -68,5 +72,44 @@
     background-color: transparent;
     color: var(--vert);
     padding-inline: 0;
+  }
+}
+
+/* ---------------------------------------------------------
+   Mobile, variante « liste » (page Projets) :
+   visuel à gauche, titre et description à droite.
+   --------------------------------------------------------- */
+@media (max-width: 639px) {
+  .carte-projet--liste .carte-projet__lien {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .carte-projet--liste .carte-projet__media {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Les technologies sont réservées au survol, sans objet ici. */
+  .carte-projet--liste .carte-projet__stack {
+    display: none;
+  }
+
+  .carte-projet--liste .carte-projet__corps {
+    flex: none;
+  }
+
+  .carte-projet--liste .carte-projet__titre {
+    margin: 0 0 0.4rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.01em;
+    color: var(--vert);
+  }
+
+  .carte-projet--liste .carte-projet__description {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--gris-5);
   }
 }
