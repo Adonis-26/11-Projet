@@ -12,10 +12,17 @@
 }
 
 .services-contenu__titre {
-  margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+  margin-bottom: 1.25rem;
   max-width: 24ch;
   font-size: var(--fs-h2);
   letter-spacing: -0.03em;
+}
+
+.services-contenu__intro {
+  margin-bottom: clamp(2rem, 5vw, 3.25rem);
+  max-width: 62ch;
+  line-height: 1.85;
+  color: var(--gris-5);
 }
 
 @media (max-width: 600px) {
