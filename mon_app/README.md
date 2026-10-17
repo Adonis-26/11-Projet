@@ -1,9 +1,5 @@
 # Portfolio Adonis-YN — React
 
-Réplique en React du portfolio Wix Studio
-(`adonisyans.wixstudio.com/adonis`) : mêmes pages, mêmes contenus, mêmes
-images et même identité visuelle, avec un pied de page retravaillé.
-
 ## Technologies
 
 - React 19
