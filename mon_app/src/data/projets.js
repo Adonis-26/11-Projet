@@ -47,7 +47,7 @@ export const projets = [
   },
   {
     id: "sophie-bluel",
-    titre: "ARCHTECTE D'INTERIEUR",
+    titre: "ARCHITECTE D'INTERIEUR",
     description: "Refonte du portefolio de Sophie Bluel",
     image: sophie,
     alt: "Portfolio de l'architecte d'intérieur Sophie Bluel",

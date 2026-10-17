@@ -48,7 +48,7 @@ function CvSection() {
             Support, administration de parcs, dépannage : j’ai passé une
             décennie à résoudre des problèmes techniques et à travailler avec
             des utilisateurs. Cette expérience guide aujourd’hui ma façon de
-            concevoir des interfaces — claires, rapides, et pensées pour les
+            concevoir des interfaces - claires, rapides, et pensées pour les
             personnes qui s’en servent.
           </p>
           <p>
